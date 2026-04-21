@@ -1,0 +1,61 @@
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: left;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: lightblue;
+}
+
+header {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: darkorange;
+}
+
+main {
+    padding: 20px;
+}
+
+figure img {
+    width: 100%;
+    max-width: 500px;
+}
+
+footer {
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
