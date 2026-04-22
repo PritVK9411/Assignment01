@@ -10,6 +10,16 @@
     <title>Job Application</title>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Job Application Form</h1>
         <p>Please complete the form below to apply for a position.</p>
@@ -39,27 +49,30 @@
             <label for="position">Select Position:</label>
             <select id="position" name="position" required>
                 <option value="">Please Select</option>
-                <option value="developer">Game Developer</option>
-                <option value="designer">UI/UX Designer</option>
-                <option value="analyst">Cybersecurity Analyst</option>
+                <option value="developer">IT Helpdesk Volunteer</option>
+                <option value="fundraising">Fundraising Officer</option>
+                <option value="socialmedia">Social Media Manager</option>
             </select>
         </fieldset>
 
         <!-- Skills -->
         <fieldset>
             <legend>Skills</legend>
-            <label><input type="checkbox" name="skills[]" value="html" checked="checked"> HTML</label>
-            <label><input type="checkbox" name="skills[]" value="css"> CSS</label>
-            <label><input type="checkbox" name="skills[]" value="javascript"> JavaScript</label>
-            <label><input type="checkbox" name="skills[]" value="php"> PHP</label>
-            <label><input type="checkbox" name="skills[]" value="mysql"> MySQL</label>
+            <label><input type="checkbox" name="skills[]" value="communication"> Communication</label>
+            <label><input type="checkbox" name="skills[]" value="teamwork"> Teamwork</label>
+            <label><input type="checkbox" name="skills[]" value="problem-solving"> Problem-Solving</label>
+            <label><input type="checkbox" name="skills[]" value="project-management"> Project Management</label>
+            <label><input type="checkbox" name="skills[]" value="social-media"> Social Media Marketing</label>
+            <label><input type="checkbox" name="skills[]" value="fundraising"> Fundraising & Outreach</label>
+            <label><input type="checkbox" name="skills[]" value="it-support"> IT Support</label>
+            <label><input type="checkbox" name="skills[]" value="data-analysis"> Data Analysis</label>
         </fieldset>
 
         <!-- Experience -->
         <fieldset>
             <legend>Experience</legend>
             <label for="experience">Years of Experience:</label>
-            <input type="number" id="experience" name="experience" min="0" max="40" required><br><br>
+            <input type="number" id="experience" name="experience" min="0" max="60" required><br><br>
 
             <label for="description">Describe Your Experience:</label><br>
             <textarea id="description" name="description" rows="4" cols="40" 
