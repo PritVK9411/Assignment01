@@ -5,16 +5,16 @@
     <meta name="description" content="Non-Profit Job Application">
     <meta name="keywords" content="Nonprofit, Jobs, Volunteer, Application">
     <meta name="author" content="Your Name">
-    <title>Apply - Non-Profit Organization</title>
+    <title>Apply - The Buddies™</title>
 </head>
 
 <body>
 
 <header>
-    <h1>Join Our Non-Profit Team</h1>
+    <h1>Join Our Non Profit Team</h1>
     <p>Make an impact. Apply today.</p>
 
-     <!-- Navigation -->
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -85,10 +85,10 @@
         <label for="experience">Years of Experience:</label>
         <input type="number" id="experience" name="experience" min="0" max="70" required><br><br>
 
-        <label for="description">Describe Your Experience:</label><br>
-        <textarea id="description" name="description" rows="4" cols="40" required></textarea>
+        <label for="description">Describe Your Experience (optional):</label><br>
+<textarea id="description" name="description" rows="4" cols="40"
+          placeholder="Briefly describe your experience (optional)"></textarea>
     </fieldset>
-
     <!-- Availability -->
     <fieldset>
         <legend>Availability</legend>
@@ -123,30 +123,34 @@
     </fieldset>
 
     <!-- Professional Links -->
-    <fieldset>
-        <legend>Professional Links</legend>
+  <fieldset>
+    <legend>Professional Links</legend>
 
-        <label for="linkedin">LinkedIn Profile:</label>
-        <input type="url" id="linkedin" name="linkedin"><br><br>
+    <label for="linkedin">LinkedIn Profile (optional):</label>
+    <input type="url" id="linkedin" name="linkedin" 
+           placeholder="https://linkedin.com/in/username (optional)"><br><br>
 
-        <label for="github">GitHub Profile:</label>
-        <input type="url" id="github" name="github"><br><br>
+    <label for="github">GitHub Profile (optional):</label>
+    <input type="url" id="github" name="github" 
+           placeholder="https://github.com/username (optional)"><br><br>
 
-        <label for="portfolio">Portfolio Website:</label>
-        <input type="url" id="portfolio" name="portfolio">
-    </fieldset>
+    <label for="portfolio">Portfolio Website (optional):</label>
+    <input type="url" id="portfolio" name="portfolio" 
+           placeholder="https://yourportfolio.com (optional)">
+</fieldset>
 
     <!-- References -->
-    <fieldset>
-        <legend>References</legend>
+   <fieldset>
+    <legend>References</legend>
 
-        <label for="refname">Reference Name:</label>
-        <input type="text" id="refname" name="refname"><br><br>
+    <label for="refname">Reference Name (optional):</label>
+    <input type="text" id="refname" name="refname" 
+           placeholder="Enter reference name (optional)"><br><br>
 
-        <label for="refcontact">Reference Contact:</label>
-        <input type="text" id="refcontact" name="refcontact">
-    </fieldset>
-
+    <label for="refcontact">Reference Contact (optional):</label>
+    <input type="text" id="refcontact" name="refcontact" 
+           placeholder="Email or phone (optional)">
+</fieldset>
     <!-- Referral -->
     <fieldset>
         <legend>How Did You Hear About Us?</legend>
@@ -197,4 +201,3 @@
 
 </body>
 </html>
-```
