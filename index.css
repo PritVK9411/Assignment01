@@ -1,5 +1,5 @@
 .logo {
-    width: 150px;
+    width: 200px;
     height: auto;
     display: block;
     margin: left;
@@ -8,54 +8,73 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: lightblue;
+    background-color: black;
+    color: white;
 }
 
 header {
     text-align: center;
-    background-color: blue;
-    color: white;
+    background-color: darkmagenta;
     padding: 20px;
 }
 
-nav ul {
+nav  {
     list-style: none;
     padding: 0;
-    margin-top: 15px;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 5px;
-}
-
-nav ul li a{
+nav a {
     text-decoration: none;
-    background-color: orange;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
+    background-color: purple;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 10px;
     font-weight: bold;
-    display: inline-block;
 }
 
-nav ul li a:hover {
-    background-color: darkorange;
+nav a:hover {
+    background-color: turquoise;
+    color: black;
 }
 
-main {
+nava:active {
+    background-color: turquoise;
+    transform: scale(0.95);
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: lightgray;
+    margin: 30px auto;
     padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+}
+
+h2 {
+    color: purple;
 }
 
 figure img {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 footer {
-    background-color: darkorange;
-    color: white;
     text-align: center;
     padding: 10px;
+    background-color: darkmagenta;
+    color: white;
 }
 
+p, li, footer {
+    color: black;
+}
+
+footer a {
+    color: black;
+}
+
+fieldset p{
+    color: white;
+}

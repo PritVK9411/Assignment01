@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="apply.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Job Application Form">
+    <meta name="keywords" content="Job, Application, Recruitment, Careers">
+    <meta name="author" content="Your Name">
+    <title>Job Application</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Job Application Form</h1>
+        <p>Please complete the form below to apply for a position.</p>
+    </header>
+
+    <form action="formtest.php" method="post" enctype="multipart/form-data">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required 
+                   pattern="[A-Za-z\s]+" placeholder="Enter your name"><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required 
+                   placeholder="example@domain.com"><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required 
+                   pattern="\d{10}" placeholder="10-digit number"><br><br>
+        </fieldset>
+
+        <!-- Position Applied For -->
+        <fieldset>
+            <legend>Position Applied For</legend>
+            <label for="position">Select Position:</label>
+            <select id="position" name="position" required>
+                <option value="">Please Select</option>
+                <option value="developer">IT Helpdesk Volunteer</option>
+                <option value="fundraising">Fundraising Officer</option>
+                <option value="socialmedia">Social Media Manager</option>
+            </select>
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label><input type="checkbox" name="skills[]" value="communication"> Communication</label>
+            <label><input type="checkbox" name="skills[]" value="teamwork"> Teamwork</label>
+            <label><input type="checkbox" name="skills[]" value="problem-solving"> Problem-Solving</label>
+            <label><input type="checkbox" name="skills[]" value="project-management"> Project Management</label>
+            <label><input type="checkbox" name="skills[]" value="social-media"> Social Media Marketing</label>
+            <label><input type="checkbox" name="skills[]" value="fundraising"> Fundraising & Outreach</label>
+            <label><input type="checkbox" name="skills[]" value="it-support"> IT Support</label>
+            <label><input type="checkbox" name="skills[]" value="data-analysis"> Data Analysis</label>
+        </fieldset>
+
+        <!-- Experience -->
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Years of Experience:</label>
+            <input type="number" id="experience" name="experience" min="0" max="60" required><br><br>
+
+            <label for="description">Describe Your Experience:</label><br>
+            <textarea id="description" name="description" rows="4" cols="40" 
+                      placeholder="Briefly describe your relevant experience..." required></textarea>
+        </fieldset>
+
+        <!-- Availability -->
+        <fieldset>
+            <legend>Availability</legend>
+            <label for="date">Available Start Date:</label>
+            <input type="text" id="date" name="date" required 
+                   pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy"><br><br>
+
+            <label for="time">Preferred Interview Time:</label>
+            <input type="text" id="time" name="time" required 
+                   pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]" placeholder="00:00">
+        </fieldset>
+
+        <!-- CV and Cover Letter Upload -->
+        <fieldset>
+            <legend>Upload Documents</legend>
+            <label for="cv">Upload CV:</label>
+            <input type="file" id="cv" name="cv" required 
+                   accept=".pdf,.doc,.docx"><br><br>
+
+            <label for="coverletter">Upload Cover Letter:</label>
+            <input type="file" id="coverletter" name="coverletter" required 
+                   accept=".pdf,.doc,.docx">
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Apply">
+        <input type="reset" value="Reset Form">
+    </form>
+</body>
+</html>
