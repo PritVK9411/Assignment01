@@ -59,7 +59,7 @@ p, li {
 
 section:hover {
     transform: scale(1.02);
-    translation: 0.2s;
+    transition: 0.2s;
 }
 
 footer {
