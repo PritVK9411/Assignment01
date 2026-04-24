@@ -70,12 +70,36 @@ input[type="file"] {
 
 /* TextArea */
 textarea {
-    resize: verticle;
+    resize: vertical;
 }
 
 /* Responsive */
-@media (max-width: 60px) {
+@media (max-width: 600px) {
     form {
         width: 90%;
     }
+}
+
+nav  {
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: purple;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: turquoise;
+    color: black;
+}
+
+nav a:active {
+    background-color: turquoise;
+    transform: scale(0.95);
 }
