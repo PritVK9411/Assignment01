@@ -11,6 +11,15 @@ header {
     text-align: center;
 }
 
+section {
+    background-color: rgba(255,255,255,0.9);
+    color: black;
+    margin: 30px auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 15px;
+}
+
 nav {
     margin-top: 10px;
 }
@@ -18,7 +27,7 @@ nav {
 nav a {
     text-decoration: none;
     background-color: purple;
-    color: white;
+    color: black;
     padding: 8px 15px;
     margin: 5px;
     border-radius: 10px;
@@ -50,7 +59,7 @@ ul {
 
 dt {
     font-weight: bold;
-    color: turquoise;
+    color: black;
 }
 
 dd {
